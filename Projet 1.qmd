@@ -1,0 +1,33 @@
+---
+title: "Projet 1"
+author: "Gilchrist"
+format: pdf
+editor: visual
+---
+
+## Illustration empirique de résultats théoriques clés
+
+# Q1
+
+Le paramètre est la valeur réelle que l'on souhaite estimer.
+
+L'estimateur est la méthode pour estimer ce paramètre.
+
+L'estimation est le résultat de l'application de l'estimateur sur les données.
+
+# Q3
+
+```{r}
+# 10 realisation d'une loi exponentielle de paramètre λ = 2
+
+#set.seed(2) de garder la meme realisation
+rexp(10,rate = 2)
+
+#a : 
+qnorm(c(0.4,0.3,0.6),0,1)
+```
+
+
+
+
+
