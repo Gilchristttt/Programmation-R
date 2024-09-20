@@ -255,3 +255,41 @@ ggplot(rp69)+
 ggplot(rp69)+
   geom_point(aes(x=dipl_aucun,y=ouvr,colour = departement,size = pop_tot),
              alpha=0.5)
+
+#### Exercice 6------
+ggplot(rp69) +
+  geom_boxplot(aes(y = proprio, x = pop_cl,fill = departement))
+
+#### Exercice 7------
+ggplot(rp69) +
+  geom_bar(aes(x = pop_cl, fill = departement))
+
+## Recoder des variable -----
+f <- c("Pomme", "Poire", "Pomme", "Cerise")
+#Changer des données 
+f <- fct_recode(
+  f,
+  "Fraise" = "Pomme",
+  "Ananas" = "Poire")
+  
+#, si on souhaite recoder les NA d’une variable, on utilisera 
+#la fonction fct_explicit_na
+# Ex
+#fct_explicit_na(hdv2003$qualif, na_level = "(Manquant)")
+
+#fct_other, qui regroupe une liste de modalités en une seule modalité “Other”
+# Ex
+# fct_other(
+#hdv2003$qualif,drop = c("Ouvrier specialise", 
+#"Ouvrier qualifie", "Cadre", "Autre")
+
+#case_when est une généralisation du ifelse
+hdv2003$statut <- case_when(
+  hdv2003$sexe == "Homme" & hdv2003$age > 60 ~ "Homme de plus de 60 ans",
+  hdv2003$sexe == "Homme" ~ "Homme",
+  TRUE ~ "Autre"
+)
+freq(hdv2003$statut)
+
+## Manipuler les données avec dplyr -------
+
