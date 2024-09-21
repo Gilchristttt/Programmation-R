@@ -292,4 +292,95 @@ hdv2003$statut <- case_when(
 freq(hdv2003$statut)
 
 ## Manipuler les données avec dplyr -------
+library(nycflights13)
+data(flights)
+data(airports)
+data(airlines)
 
+slice(airports,345)
+slice(airports,1:9)
+
+#slice_min et slice_max permettent de sélectionner les lignes avec les valeurs
+#les plus grandes ou les plus petite d’une variable donnée
+slice_min(flights, dep_delay)
+
+filter(flights, month == 1)
+filter(flights, dep_delay >= 10 & dep_delay <= 15)
+
+select(airports,lat,lon)
+
+rename(airports, longitude = lon, latitude = lat)
+
+arrange(flights, dep_delay)
+
+#mutate permet de créer de nouvelles colonnes dans le tableau de données
+
+flights <- mutate(flights, duree_h = air_time / 60)
+select(flights, air_time, duree_h)
+
+flights %>% group_by(month)
+group_by(flights,month)
+
+flights %>%
+  summarise(
+    retard_dep = mean(dep_delay, na.rm = TRUE),
+    retard_arr = mean(arr_delay, na.rm = TRUE)
+  )
+
+distinct(flights,month,day)
+
+personnes <- tibble(
+  nom = c("Sylvie", "Sylvie", "Monique", "Gunter", "Rayan", "Rayan"),
+  voiture = c("Twingo", "Ferrari", "Scenic", "Lada", "Twingo", "Clio")
+)
+
+voitures <- tibble(
+  voiture = c("Twingo", "Ferrari", "Clio", "Lada", "208"),
+  vitesse = c("140", "280", "160", "85", "160")
+)
+personnes %>% left_join(voitures)
+
+personnes %>% inner_join(voitures)
+
+###Exercices---------
+
+#### Exercice 1 ------
+
+slice(airports,1)
+slice(airlines, 1:5)
+airports %>% slice_min(alt)
+
+#### Exercice 2 ------
+filter(flights,month==7)
+filter(flights,arr_delay >=5 & arr_delay<=15)
+filter(flights,carrier %in% c("DL","UL","UA","AA"))
+
+#### Exercice 3 ------
+flights %>% arrange(desc(dep_delay))
+
+#### Exercice 4 ------
+airports %>% select(name,lat,lon)
+airports %>% select(-starts_with("tz"))
+flights %>% select(ends_with("delay"))
+airports %>% rename(altitude = alt, fuseau_horaire= tzone)
+
+#### Exercice 1.5 ------
+select(airports %>% mutate(alt_m =alt/3.2802),alt,alt_m)
+
+#### Exercice 3.1 ------
+flights %>% 
+  group_by(month) %>%
+  summarise(nb=n())
+
+flights %>% 
+  group_by(month) %>%
+  summarise(nb=n()) %>%
+  arrange(nb)
+
+select(flights %>% 
+  group_by(origin) %>%
+  mutate(distance_moyenne = mean(distance)),origin,distance_moyenne) 
+#bon
+flights %>% 
+   group_by(origin) %>%
+   summarise(distance_moyenne = mean(distance))
