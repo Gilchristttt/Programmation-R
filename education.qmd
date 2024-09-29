@@ -1,0 +1,66 @@
+---
+title: "Education"
+author: "Gilchrist Ouedraogo"
+format: pdf
+editor: visual
+---
+# Chargement des librairies
+
+```{r}
+library(tidyverse)
+library(questionr)
+```
+
+# Chargement de la data
+```{r}
+df <- read_csv2("data/student-mat.csv")
+```
+
+#  Les élèves qui étudient plus obtiennent-ils de meilleures notes ?
+
+Analyse de la relation entre la variable studytime et les notes (G1, G2, G3). Une régression linéaire pourrait montrer s'il existe une corrélation positive.
+
+```{r}
+data <- df %>% select(sex ,age ,Medu, Fedu, Mjob, Fjob,studytime, famsup,nursery, higher, internet,famrel, absences, G1, G2, G3 )
+
+internet <- data %>% count(internet)
+
+data %>% 
+  group_by(Mjob) %>%
+  summarise(nb=n())
+
+# validé l'année
+pass_g3 <- filter(data, G3 >10)
+
+# ajourné
+fall_g3 <- filter(data, G3 <10)
+
+influ_pjob <- pass_g3 %>% 
+  group_by(Mjob,Fjob) %>%
+  summarise(nb=n())
+
+influ_npjob <- fall_g3 %>% 
+  group_by(Mjob,Fjob) %>%
+  summarise(nb=n())
+
+# Influence de l'activité de la mère sur l'elève
+lprop(table(data$Mjob, data$G3))
+cprop(table(data$Mjob, data$G3))
+
+# Influence de l'activité du père sur l'elève
+lprop(table(data$Fjob, data$G3))
+cprop(table(data$Fjob, data$G3))
+
+cor(data$Medu,data$G3)
+cor(data$Fedu,data$G3)
+
+cor(data$G3,data$studytime)
+
+chisq.residuals(table(data$Mjob, data$G3))
+mosaicplot(table(data$Mjob, data$G3))
+
+lm(data$G3 ~ data$Medu)
+```
+
+
+
