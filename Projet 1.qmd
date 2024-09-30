@@ -5,9 +5,9 @@ format: pdf
 editor: visual
 ---
 
-## Illustration empirique de résultats théoriques clés
+# Illustration empirique de résultats théoriques clés
 
-# Q1
+## Q1
 
 Le paramètre est la valeur réelle que l'on souhaite estimer.
 
@@ -15,7 +15,33 @@ L'estimateur est la méthode pour estimer ce paramètre.
 
 L'estimation est le résultat de l'application de l'estimateur sur les données.
 
-# Q3
+$\bar{Z_n} = \frac{1}{n} \sum_{i=1}^{n} Z_i $
+
+$ E(\bar{Z_n}) = E(\frac{1}{n} \sum_{i=1}^{n} Z_i) $
+
+$ = \frac{1}{n}\sum_{i=1}^{n} E(Z_i)$ par linéarité de l'espérance
+
+$= \frac{1}{n} * n * E(Z_1) $ car de même loi
+
+$E(\bar{Z_n}) = E(Z_1) $
+
+$V(\bar{Z_n}) = V(\frac{1}{n} \sum_{i=1}^{n} Z_i) $
+
+$ = \frac{1}{n^2}\sum_{i=1}^{n} V(Z_i)$ par independance
+
+$= \frac{1}{n^2} * n * V(Z_1) $
+
+$ V(\bar{Z_n}) = \frac{1}{n} * V(Z_1) $ car de même loi
+
+## Q2
+
+l'erreur standard correspond à l'écart-type de $\bar{Z_n}$ 
+
+l'estimateur est:
+
+$\frac{\sqrt{\frac{1}{n-1} \sum_{i}^n (Z_i -\bar{Z_n})^2}}{\sqrt{n}} $
+
+## Q3
 
 ```{r}
 # 10 realisation d'une loi exponentielle de paramètre λ = 2
@@ -24,10 +50,84 @@ L'estimation est le résultat de l'application de l'estimateur sur les données.
 rexp(10,rate = 2)
 
 #a : 
-qnorm(c(0.4,0.3,0.6),0,1)
+rnorm(10,mean=0, sd=1)
+
+alpha <- 2
+beta <- 4
+rgamma(10,shape = alpha, rate = beta)
+
+#b
+
+## Distribution de loi exponentielle
+
+d_exp <- rexp(20,2)
+d_exp
+
+moy_empiride <- mean(d_exp)
+moy_empiride
+
+erreur_standart <- sd(d_exp)/sqrt(20)
+erreur_standart
+
+erreur_standart_b <-sqrt(var(d_exp))/sqrt(20)
+erreur_standart_b
+
+## Distribution de loi Normale
+
+d_normale <- rnorm(20,mean = 0, sd= 1)
+d_normale
+
+mean(d_normale)
+
+sd(d_normale)/sqrt(20)
+
+#c
+par(mfrow = c(1, 2))
+n <- 1000
+z <- rexp(n, rate = 2)
+hist(z, freq = FALSE, breaks = 30)
+curve(dexp(x, rate = 2), add = TRUE, col = "red")
+curve(qexp(x, rate = 2), from = 0, to = 5, col = "blue")
+curve(pexp(x, rate = 2), add = TRUE, col = "brown")
+abline(0, 1, lty=2)
+
+# On part de la réalisation de 1000 observation suivant une loi exponentielle
+#de paramètre 2. ET:
+# On trace l'histogramme de cette realisation avec la fonction hist()
+#Puis on trace successivement la densité, le quantile, et la fonction
+# de repartition respectivement avec les fonction dexp ,qexp, pexp
+
+qnorm(d_normale,mean = 0, sd =1)
+
+curve(dnorm(x,mean = 0, sd =1),from = -7, to = 7)
+#verif de la convergence de la somme var exp vers une loi gamma
+par(mfrow = c(1, 2))
+curve(dgamma(x,shape = 4, rate =2),from = -7, to = 7)
+curve(dexp(x, rate = 2), add = TRUE, col = "red")
+abline(0, 40, lty=15)
+
+#d
+# mean(z <= 1.2) devrait se rapprocher de la fonction de repartition
+# evaluer en 2 pour x= 1.2 et quantile(z, probs = 0.9 de valeur obtenue
+# en evaluant la reciproque de la fonction de repartion en 0.9
 ```
 
+## Q4
+Loi Forte des grands nombre: Soit $(Z_n)$ une suite de variable aléatoire integrable et I.i.d. Soit $m$ leur esperance commune alors $\bar{Z_n} = \frac{1}{n} \sum_{i=1}^{n} Z_i $ converge presque surement vers $m$
 
+TCL : Soit $(Z_n)$ une suite de variable aléatoire de carré integrable et I.i.d. Avec $m=E(Z_1)$ et $\epsilon^2=v(Z_1) $, alors on a:
+$ \frac{\sqrt{n}}{\epsilon }(\bar(Z_n -m ) $ converge en loi vers une gaussienne centré réduite
 
+## Q5
 
+```{r}
+curve(dexp(x, rate = 2),  col = "red")
+abline(0, 40, lty=15)
 
+n=1000
+z <- rexp(n, rate=2)
+mean(z) # ce qui approxime à la moyenne théorique, ici 1/2
+
+var(z)/n #0.0002553287
+1/(4*n) # 0.00025
+```
