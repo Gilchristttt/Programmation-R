@@ -15,31 +15,31 @@ L'estimateur est la méthode pour estimer ce paramètre.
 
 L'estimation est le résultat de l'application de l'estimateur sur les données.
 
-$\bar{Z_n} = \frac{1}{n} \sum_{i=1}^{n} Z_i $
+$\bar{Z_n} = \frac{1}{n} \sum_{i=1}^{n} Z_i$
 
-$ E(\bar{Z_n}) = E(\frac{1}{n} \sum_{i=1}^{n} Z_i) $
+$E(\bar{Z_n}) = E(\frac{1}{n} \sum_{i=1}^{n} Z_i)$
 
-$ = \frac{1}{n}\sum_{i=1}^{n} E(Z_i)$ par linéarité de l'espérance
+$= \frac{1}{n}\sum_{i=1}^{n} E(Z_i)$ par linéarité de l'espérance
 
-$= \frac{1}{n} * n * E(Z_1) $ car de même loi
+$= \frac{1}{n} * n * E(Z_1)$ car de même loi
 
-$E(\bar{Z_n}) = E(Z_1) $
+$E(\bar{Z_n}) = E(Z_1)$
 
-$V(\bar{Z_n}) = V(\frac{1}{n} \sum_{i=1}^{n} Z_i) $
+$V(\bar{Z_n}) = V(\frac{1}{n} \sum_{i=1}^{n} Z_i)$
 
-$ = \frac{1}{n^2}\sum_{i=1}^{n} V(Z_i)$ par independance
+$= \frac{1}{n^2}\sum_{i=1}^{n} V(Z_i)$ par independance
 
-$= \frac{1}{n^2} * n * V(Z_1) $
+$= \frac{1}{n^2} * n * V(Z_1)$
 
-$ V(\bar{Z_n}) = \frac{1}{n} * V(Z_1) $ car de même loi
+$V(\bar{Z_n}) = \frac{1}{n} * V(Z_1)$ car de même loi
 
 ## Q2
 
-l'erreur standard correspond à l'écart-type de $\bar{Z_n}$ 
+l'erreur standard correspond à l'écart-type de $\bar{Z_n}$
 
 l'estimateur est:
 
-$\frac{\sqrt{\frac{1}{n-1} \sum_{i}^n (Z_i -\bar{Z_n})^2}}{\sqrt{n}} $
+$\frac{\sqrt{\frac{1}{n-1} \sum_{i}^n (Z_i -\bar{Z_n})^2}}{\sqrt{n}}$
 
 ## Q3
 
@@ -113,10 +113,10 @@ abline(0, 40, lty=15)
 ```
 
 ## Q4
-Loi Forte des grands nombre: Soit $(Z_n)$ une suite de variable aléatoire integrable et I.i.d. Soit $m$ leur esperance commune alors $\bar{Z_n} = \frac{1}{n} \sum_{i=1}^{n} Z_i $ converge presque surement vers $m$
 
-TCL : Soit $(Z_n)$ une suite de variable aléatoire de carré integrable et I.i.d. Avec $m=E(Z_1)$ et $\epsilon^2=v(Z_1) $, alors on a:
-$ \frac{\sqrt{n}}{\epsilon }(\bar(Z_n -m ) $ converge en loi vers une gaussienne centré réduite
+Loi Forte des grands nombre: Soit $(Z_n)$ une suite de variable aléatoire integrable et I.i.d. Soit $m$ leur esperance commune alors $\bar{Z_n} = \frac{1}{n} \sum\_{i=1}\^{n} Z_i$ converge presque surement vers $m$
+
+TCL : Soit $(Z_n)$ une suite de variable aléatoire de carré integrable et I.i.d. Avec $m=E(Z_1)$ et \$\epsilon\^2=v(Z_1) \$, alors on a: $\frac{\sqrt{n}}{\epsilon }(\bar(Z_n -m )$ converge en loi vers une gaussienne centré réduite
 
 ## Q5
 
@@ -130,4 +130,74 @@ mean(z) # ce qui approxime à la moyenne théorique, ici 1/2
 
 var(z)/n #0.0002553287
 1/(4*n) # 0.00025
+```
+
+# Evaluation
+
+## Exercice 3
+
+```{r}
+#1
+moyenne <- function(x){
+  cmpt = 0
+  for (val in x){
+    cmpt = cmpt +val
+  }
+  cmpt/length(x)
+}
+x <- 1:10
+mean(x)
+moyenne(x)
+
+# 2
+moyenne_b <- function(x){
+  x <- x[!is.na(x)]
+  cmpt = 0
+  for (val in x){
+    cmpt = cmpt +val
+  }
+  cmpt/length(x)
+}
+y <- c(1:10, NA)
+mean(y,na.rm = TRUE)
+moyenne_b(y)
+
+# 3
+indPremNeg <- function(x){
+  for (i in 1:length(x)){
+    if (x[i] < 0){
+      return(i)
+    }
+  }
+  return(0)
+}
+
+z <- c(1,2,-3,1)
+v <-  c(1,2,3,1)
+indPremNeg(z)
+
+which(z<0)
+
+# 4
+
+premValPosCol <- function(df){
+  v = c()
+  for (i in 1 :ncol(df)){
+    for (j in 1 :nrow(df)){
+      if ( df[j,i] > 0){
+        v = c(v,df[j,i])
+        break
+      }
+      next
+    }
+    next
+    v = c(v, NA)
+  }
+  v
+}
+u <- runif(10, min = -1, max = 1)
+v <- runif(10, min = -1, max = 1)
+d <- data.frame(u, v)
+d
+premValPosCol(d)
 ```
