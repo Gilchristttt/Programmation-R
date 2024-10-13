@@ -1,0 +1,1438 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='fr-en-annuaire-education' inline='true' name='federated.1aid2ow1wxs1pr1clnhnh144fxbv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='fr-en-annuaire-education' name='textscan.0fxgme30v3subl18f6vrg1g0ch99'>
+            <connection class='textscan' directory='C:/Users/ouedr/Downloads' filename='fr-en-annuaire-education.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0fxgme30v3subl18f6vrg1g0ch99' name='fr-en-annuaire-education.csv' table='[fr-en-annuaire-education#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=';'>
+            <column datatype='string' name='Identifiant_de_l_etablissement' ordinal='0' />
+            <column datatype='string' name='Nom_etablissement' ordinal='1' />
+            <column datatype='string' name='Type_etablissement' ordinal='2' />
+            <column datatype='string' name='Statut_public_prive' ordinal='3' />
+            <column datatype='string' name='Adresse_1' ordinal='4' />
+            <column datatype='string' name='Adresse_2' ordinal='5' />
+            <column datatype='string' name='Adresse_3' ordinal='6' />
+            <column datatype='integer' name='Code_postal' ordinal='7' />
+            <column datatype='integer' name='Code_commune' ordinal='8' />
+            <column datatype='string' name='Nom_commune' ordinal='9' />
+            <column datatype='integer' name='Code_departement' ordinal='10' />
+            <column datatype='integer' name='Code_academie' ordinal='11' />
+            <column datatype='integer' name='Code_region' ordinal='12' />
+            <column datatype='integer' name='Ecole_maternelle' ordinal='13' />
+            <column datatype='integer' name='Ecole_elementaire' ordinal='14' />
+            <column datatype='string' name='Voie_generale' ordinal='15' />
+            <column datatype='string' name='Voie_technologique' ordinal='16' />
+            <column datatype='string' name='Voie_professionnelle' ordinal='17' />
+            <column datatype='integer' name='Telephone' ordinal='18' />
+            <column datatype='string' name='Fax' ordinal='19' />
+            <column datatype='string' name='Web' ordinal='20' />
+            <column datatype='string' name='Mail' ordinal='21' />
+            <column datatype='integer' name='Restauration' ordinal='22' />
+            <column datatype='integer' name='Hebergement' ordinal='23' />
+            <column datatype='integer' name='ULIS' ordinal='24' />
+            <column datatype='string' name='Apprentissage' ordinal='25' />
+            <column datatype='string' name='Segpa' ordinal='26' />
+            <column datatype='string' name='Section_arts' ordinal='27' />
+            <column datatype='string' name='Section_cinema' ordinal='28' />
+            <column datatype='string' name='Section_theatre' ordinal='29' />
+            <column datatype='string' name='Section_sport' ordinal='30' />
+            <column datatype='string' name='Section_internationale' ordinal='31' />
+            <column datatype='string' name='Section_europeenne' ordinal='32' />
+            <column datatype='string' name='Lycee_Agricole' ordinal='33' />
+            <column datatype='string' name='Lycee_militaire' ordinal='34' />
+            <column datatype='string' name='Lycee_des_metiers' ordinal='35' />
+            <column datatype='string' name='Post_BAC' ordinal='36' />
+            <column datatype='string' name='Appartenance_Education_Prioritaire' ordinal='37' />
+            <column datatype='string' name='GRETA' ordinal='38' />
+            <column datatype='integer' name='SIREN_SIRET' ordinal='39' />
+            <column datatype='integer' name='Nombre_d_eleves' ordinal='40' />
+            <column datatype='string' name='Fiche_onisep' ordinal='41' />
+            <column datatype='string' name='position' ordinal='42' />
+            <column datatype='string' name='Type_contrat_prive' ordinal='43' />
+            <column datatype='string' name='Libelle_departement' ordinal='44' />
+            <column datatype='string' name='Libelle_academie' ordinal='45' />
+            <column datatype='string' name='Libelle_region' ordinal='46' />
+            <column datatype='real' name='coordX_origine' ordinal='47' />
+            <column datatype='real' name='coordY_origine' ordinal='48' />
+            <column datatype='string' name='epsg_origine' ordinal='49' />
+            <column datatype='string' name='nom_circonscription' ordinal='50' />
+            <column datatype='real' name='latitude' ordinal='51' />
+            <column datatype='real' name='longitude' ordinal='52' />
+            <column datatype='string' name='precision_localisation' ordinal='53' />
+            <column datatype='date' name='date_ouverture' ordinal='54' />
+            <column datatype='date' name='date_maj_ligne' ordinal='55' />
+            <column datatype='string' name='etat' ordinal='56' />
+            <column datatype='string' name='ministere_tutelle' ordinal='57' />
+            <column datatype='integer' name='multi_uai' ordinal='58' />
+            <column datatype='integer' name='rpi_concentre' ordinal='59' />
+            <column datatype='integer' name='rpi_disperse' ordinal='60' />
+            <column datatype='integer' name='code_nature' ordinal='61' />
+            <column datatype='string' name='libelle_nature' ordinal='62' />
+            <column datatype='integer' name='Code_type_contrat_prive' ordinal='63' />
+            <column datatype='string' name='PIAL' ordinal='64' />
+            <column datatype='string' name='etablissement_mere' ordinal='65' />
+            <column datatype='string' name='type_rattachement_etablissement_mere' ordinal='66' />
+            <column datatype='string' name='code_circonscription' ordinal='67' />
+            <column datatype='string' name='code_zone_animation_pedagogique' ordinal='68' />
+            <column datatype='string' name='libelle_zone_animation_pedagogique' ordinal='69' />
+            <column datatype='string' name='code_bassin_formation' ordinal='70' />
+            <column datatype='string' name='libelle_bassin_formation' ordinal='71' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0fxgme30v3subl18f6vrg1g0ch99' name='fr-en-annuaire-education.csv' table='[fr-en-annuaire-education#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=';'>
+            <column datatype='string' name='Identifiant_de_l_etablissement' ordinal='0' />
+            <column datatype='string' name='Nom_etablissement' ordinal='1' />
+            <column datatype='string' name='Type_etablissement' ordinal='2' />
+            <column datatype='string' name='Statut_public_prive' ordinal='3' />
+            <column datatype='string' name='Adresse_1' ordinal='4' />
+            <column datatype='string' name='Adresse_2' ordinal='5' />
+            <column datatype='string' name='Adresse_3' ordinal='6' />
+            <column datatype='integer' name='Code_postal' ordinal='7' />
+            <column datatype='integer' name='Code_commune' ordinal='8' />
+            <column datatype='string' name='Nom_commune' ordinal='9' />
+            <column datatype='integer' name='Code_departement' ordinal='10' />
+            <column datatype='integer' name='Code_academie' ordinal='11' />
+            <column datatype='integer' name='Code_region' ordinal='12' />
+            <column datatype='integer' name='Ecole_maternelle' ordinal='13' />
+            <column datatype='integer' name='Ecole_elementaire' ordinal='14' />
+            <column datatype='string' name='Voie_generale' ordinal='15' />
+            <column datatype='string' name='Voie_technologique' ordinal='16' />
+            <column datatype='string' name='Voie_professionnelle' ordinal='17' />
+            <column datatype='integer' name='Telephone' ordinal='18' />
+            <column datatype='string' name='Fax' ordinal='19' />
+            <column datatype='string' name='Web' ordinal='20' />
+            <column datatype='string' name='Mail' ordinal='21' />
+            <column datatype='integer' name='Restauration' ordinal='22' />
+            <column datatype='integer' name='Hebergement' ordinal='23' />
+            <column datatype='integer' name='ULIS' ordinal='24' />
+            <column datatype='string' name='Apprentissage' ordinal='25' />
+            <column datatype='string' name='Segpa' ordinal='26' />
+            <column datatype='string' name='Section_arts' ordinal='27' />
+            <column datatype='string' name='Section_cinema' ordinal='28' />
+            <column datatype='string' name='Section_theatre' ordinal='29' />
+            <column datatype='string' name='Section_sport' ordinal='30' />
+            <column datatype='string' name='Section_internationale' ordinal='31' />
+            <column datatype='string' name='Section_europeenne' ordinal='32' />
+            <column datatype='string' name='Lycee_Agricole' ordinal='33' />
+            <column datatype='string' name='Lycee_militaire' ordinal='34' />
+            <column datatype='string' name='Lycee_des_metiers' ordinal='35' />
+            <column datatype='string' name='Post_BAC' ordinal='36' />
+            <column datatype='string' name='Appartenance_Education_Prioritaire' ordinal='37' />
+            <column datatype='string' name='GRETA' ordinal='38' />
+            <column datatype='integer' name='SIREN_SIRET' ordinal='39' />
+            <column datatype='integer' name='Nombre_d_eleves' ordinal='40' />
+            <column datatype='string' name='Fiche_onisep' ordinal='41' />
+            <column datatype='string' name='position' ordinal='42' />
+            <column datatype='string' name='Type_contrat_prive' ordinal='43' />
+            <column datatype='string' name='Libelle_departement' ordinal='44' />
+            <column datatype='string' name='Libelle_academie' ordinal='45' />
+            <column datatype='string' name='Libelle_region' ordinal='46' />
+            <column datatype='real' name='coordX_origine' ordinal='47' />
+            <column datatype='real' name='coordY_origine' ordinal='48' />
+            <column datatype='string' name='epsg_origine' ordinal='49' />
+            <column datatype='string' name='nom_circonscription' ordinal='50' />
+            <column datatype='real' name='latitude' ordinal='51' />
+            <column datatype='real' name='longitude' ordinal='52' />
+            <column datatype='string' name='precision_localisation' ordinal='53' />
+            <column datatype='date' name='date_ouverture' ordinal='54' />
+            <column datatype='date' name='date_maj_ligne' ordinal='55' />
+            <column datatype='string' name='etat' ordinal='56' />
+            <column datatype='string' name='ministere_tutelle' ordinal='57' />
+            <column datatype='integer' name='multi_uai' ordinal='58' />
+            <column datatype='integer' name='rpi_concentre' ordinal='59' />
+            <column datatype='integer' name='rpi_disperse' ordinal='60' />
+            <column datatype='integer' name='code_nature' ordinal='61' />
+            <column datatype='string' name='libelle_nature' ordinal='62' />
+            <column datatype='integer' name='Code_type_contrat_prive' ordinal='63' />
+            <column datatype='string' name='PIAL' ordinal='64' />
+            <column datatype='string' name='etablissement_mere' ordinal='65' />
+            <column datatype='string' name='type_rattachement_etablissement_mere' ordinal='66' />
+            <column datatype='string' name='code_circonscription' ordinal='67' />
+            <column datatype='string' name='code_zone_animation_pedagogique' ordinal='68' />
+            <column datatype='string' name='libelle_zone_animation_pedagogique' ordinal='69' />
+            <column datatype='string' name='code_bassin_formation' ordinal='70' />
+            <column datatype='string' name='libelle_bassin_formation' ordinal='71' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Identifiant_de_l_etablissement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Identifiant_de_l_etablissement]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Identifiant_de_l_etablissement</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nom_etablissement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nom_etablissement]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Nom_etablissement</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type_etablissement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type_etablissement]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Type_etablissement</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Statut_public_prive</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Statut_public_prive]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Statut_public_prive</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adresse_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Adresse_1]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Adresse_1</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adresse_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Adresse_2]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Adresse_2</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adresse_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Adresse_3]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Adresse_3</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code_postal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Code_postal]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Code_postal</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code_commune</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Code_commune]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Code_commune</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nom_commune</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nom_commune]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Nom_commune</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code_departement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Code_departement]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Code_departement</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code_academie</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Code_academie]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Code_academie</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code_region</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Code_region]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Code_region</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ecole_maternelle</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ecole_maternelle]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Ecole_maternelle</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ecole_elementaire</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ecole_elementaire]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Ecole_elementaire</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Voie_generale</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Voie_generale]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Voie_generale</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Voie_technologique</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Voie_technologique]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Voie_technologique</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Voie_professionnelle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Voie_professionnelle]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Voie_professionnelle</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Telephone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Telephone]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Telephone</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fax</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fax]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Fax</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Web</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Web]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Web</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mail</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Mail]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Mail</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Restauration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Restauration]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Restauration</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hebergement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hebergement]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Hebergement</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ULIS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ULIS]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>ULIS</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Apprentissage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Apprentissage]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Apprentissage</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segpa</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Segpa]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Segpa</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Section_arts</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Section_arts]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Section_arts</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Section_cinema</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Section_cinema]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Section_cinema</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Section_theatre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Section_theatre]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Section_theatre</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Section_sport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Section_sport]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Section_sport</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Section_internationale</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Section_internationale]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Section_internationale</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Section_europeenne</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Section_europeenne]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Section_europeenne</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lycee_Agricole</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lycee_Agricole]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Lycee_Agricole</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lycee_militaire</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lycee_militaire]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Lycee_militaire</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lycee_des_metiers</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lycee_des_metiers]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Lycee_des_metiers</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Post_BAC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Post_BAC]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Post_BAC</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Appartenance_Education_Prioritaire</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Appartenance_Education_Prioritaire]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Appartenance_Education_Prioritaire</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GRETA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GRETA]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>GRETA</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SIREN_SIRET</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SIREN_SIRET]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>SIREN_SIRET</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nombre_d_eleves</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nombre_d_eleves]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Nombre_d_eleves</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fiche_onisep</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fiche_onisep]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Fiche_onisep</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>position</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[position]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>position</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type_contrat_prive</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type_contrat_prive]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Type_contrat_prive</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Libelle_departement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Libelle_departement]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Libelle_departement</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Libelle_academie</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Libelle_academie]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Libelle_academie</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Libelle_region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Libelle_region]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Libelle_region</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coordX_origine</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coordX_origine]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>coordX_origine</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coordY_origine</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coordY_origine]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>coordY_origine</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>epsg_origine</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[epsg_origine]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>epsg_origine</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nom_circonscription</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nom_circonscription]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>nom_circonscription</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precision_localisation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[precision_localisation]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>precision_localisation</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_ouverture</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_ouverture]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>date_ouverture</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_maj_ligne</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_maj_ligne]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>date_maj_ligne</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>etat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[etat]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>etat</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ministere_tutelle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ministere_tutelle]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>ministere_tutelle</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>multi_uai</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[multi_uai]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>multi_uai</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rpi_concentre</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rpi_concentre]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>rpi_concentre</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rpi_disperse</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rpi_disperse]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>rpi_disperse</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>code_nature</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[code_nature]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>code_nature</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>libelle_nature</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[libelle_nature]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>libelle_nature</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code_type_contrat_prive</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Code_type_contrat_prive]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>Code_type_contrat_prive</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PIAL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PIAL]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>PIAL</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>etablissement_mere</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[etablissement_mere]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>etablissement_mere</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type_rattachement_etablissement_mere</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type_rattachement_etablissement_mere]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>type_rattachement_etablissement_mere</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>code_circonscription</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[code_circonscription]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>code_circonscription</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>code_zone_animation_pedagogique</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[code_zone_animation_pedagogique]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>code_zone_animation_pedagogique</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>libelle_zone_animation_pedagogique</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[libelle_zone_animation_pedagogique]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>libelle_zone_animation_pedagogique</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>code_bassin_formation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[code_bassin_formation]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>code_bassin_formation</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>libelle_bassin_formation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[libelle_bassin_formation]</local-name>
+            <parent-name>[fr-en-annuaire-education.csv]</parent-name>
+            <remote-alias>libelle_bassin_formation</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Adresse 1' datatype='string' name='[Adresse_1]' role='dimension' type='nominal' />
+      <column caption='Adresse 2' datatype='string' name='[Adresse_2]' role='dimension' type='nominal' />
+      <column caption='Adresse 3' datatype='string' name='[Adresse_3]' role='dimension' type='nominal' />
+      <column caption='Appartenance Education Prioritaire' datatype='string' name='[Appartenance_Education_Prioritaire]' role='dimension' type='nominal' />
+      <column caption='Code academie' datatype='integer' name='[Code_academie]' role='dimension' type='ordinal' />
+      <column caption='Code commune' datatype='integer' name='[Code_commune]' role='dimension' type='ordinal' />
+      <column caption='Code departement' datatype='integer' name='[Code_departement]' role='dimension' type='ordinal' />
+      <column caption='Code postal' datatype='integer' name='[Code_postal]' role='dimension' type='ordinal' />
+      <column caption='Code region' datatype='integer' name='[Code_region]' role='dimension' type='ordinal' />
+      <column caption='Code type contrat prive' datatype='integer' name='[Code_type_contrat_prive]' role='dimension' type='ordinal' />
+      <column caption='Ecole elementaire' datatype='integer' name='[Ecole_elementaire]' role='measure' type='quantitative' />
+      <column caption='Ecole maternelle' datatype='integer' name='[Ecole_maternelle]' role='measure' type='quantitative' />
+      <column caption='Fiche onisep' datatype='string' name='[Fiche_onisep]' role='dimension' type='nominal' />
+      <column caption='Greta' datatype='string' name='[GRETA]' role='dimension' type='nominal' />
+      <column caption='Identifiant de l etablissement' datatype='string' name='[Identifiant_de_l_etablissement]' role='dimension' type='nominal' />
+      <column caption='Libelle academie' datatype='string' name='[Libelle_academie]' role='dimension' type='nominal' />
+      <column caption='Libelle departement' datatype='string' name='[Libelle_departement]' role='dimension' type='nominal' />
+      <column caption='Libelle region' datatype='string' name='[Libelle_region]' role='dimension' type='nominal' />
+      <column caption='Lycee Agricole' datatype='string' name='[Lycee_Agricole]' role='dimension' type='nominal' />
+      <column caption='Lycee des metiers' datatype='string' name='[Lycee_des_metiers]' role='dimension' type='nominal' />
+      <column caption='Lycee militaire' datatype='string' name='[Lycee_militaire]' role='dimension' type='nominal' />
+      <column caption='Nom commune' datatype='string' name='[Nom_commune]' role='dimension' type='nominal' />
+      <column caption='Nom etablissement' datatype='string' name='[Nom_etablissement]' role='dimension' type='nominal' />
+      <column caption='Nombre d eleves' datatype='integer' name='[Nombre_d_eleves]' role='measure' type='quantitative' />
+      <column caption='Pial' datatype='string' name='[PIAL]' role='dimension' type='nominal' />
+      <column caption='Post BAC' datatype='string' name='[Post_BAC]' role='dimension' type='nominal' />
+      <column caption='Siren Siret' datatype='integer' name='[SIREN_SIRET]' role='measure' type='quantitative' />
+      <column caption='Section arts' datatype='string' name='[Section_arts]' role='dimension' type='nominal' />
+      <column caption='Section cinema' datatype='string' name='[Section_cinema]' role='dimension' type='nominal' />
+      <column caption='Section europeenne' datatype='string' name='[Section_europeenne]' role='dimension' type='nominal' />
+      <column caption='Section internationale' datatype='string' name='[Section_internationale]' role='dimension' type='nominal' />
+      <column caption='Section sport' datatype='string' name='[Section_sport]' role='dimension' type='nominal' />
+      <column caption='Section theatre' datatype='string' name='[Section_theatre]' role='dimension' type='nominal' />
+      <column caption='Statut public prive' datatype='string' name='[Statut_public_prive]' role='dimension' type='nominal' />
+      <column caption='Type contrat prive' datatype='string' name='[Type_contrat_prive]' role='dimension' type='nominal' />
+      <column caption='Type etablissement' datatype='string' name='[Type_etablissement]' role='dimension' type='nominal' />
+      <column caption='Ulis' datatype='integer' name='[ULIS]' role='measure' type='quantitative' />
+      <column caption='Voie generale' datatype='string' name='[Voie_generale]' role='dimension' type='nominal' />
+      <column caption='Voie professionnelle' datatype='string' name='[Voie_professionnelle]' role='dimension' type='nominal' />
+      <column caption='Voie technologique' datatype='string' name='[Voie_technologique]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='fr-en-annuaire-education.csv' datatype='table' name='[__tableau_internal_object_id__].[fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB]' role='measure' type='quantitative' />
+      <column caption='Code Bassin Formation' datatype='string' name='[code_bassin_formation]' role='dimension' type='nominal' />
+      <column caption='Code Circonscription' datatype='string' name='[code_circonscription]' role='dimension' type='nominal' />
+      <column caption='Code Nature' datatype='integer' name='[code_nature]' role='dimension' type='ordinal' />
+      <column caption='Code Zone Animation Pedagogique' datatype='string' name='[code_zone_animation_pedagogique]' role='dimension' type='nominal' />
+      <column caption='coordX origine' datatype='real' name='[coordX_origine]' role='measure' type='quantitative' />
+      <column caption='coordY origine' datatype='real' name='[coordY_origine]' role='measure' type='quantitative' />
+      <column caption='Date Maj Ligne' datatype='date' name='[date_maj_ligne]' role='dimension' type='ordinal' />
+      <column caption='Date Ouverture' datatype='date' name='[date_ouverture]' role='dimension' type='ordinal' />
+      <column caption='Epsg Origine' datatype='string' name='[epsg_origine]' role='dimension' type='nominal' />
+      <column caption='Etablissement Mere' datatype='string' name='[etablissement_mere]' role='dimension' type='nominal' />
+      <column caption='Etat' datatype='string' name='[etat]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Libelle Bassin Formation' datatype='string' name='[libelle_bassin_formation]' role='dimension' type='nominal' />
+      <column caption='Libelle Nature' datatype='string' name='[libelle_nature]' role='dimension' type='nominal' />
+      <column caption='Libelle Zone Animation Pedagogique' datatype='string' name='[libelle_zone_animation_pedagogique]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Ministere Tutelle' datatype='string' name='[ministere_tutelle]' role='dimension' type='nominal' />
+      <column caption='Multi Uai' datatype='integer' name='[multi_uai]' role='measure' type='quantitative' />
+      <column caption='Nom Circonscription' datatype='string' name='[nom_circonscription]' role='dimension' type='nominal' />
+      <column caption='Position' datatype='string' name='[position]' role='dimension' type='nominal' />
+      <column caption='Precision Localisation' datatype='string' name='[precision_localisation]' role='dimension' type='nominal' />
+      <column caption='Rpi Concentre' datatype='integer' name='[rpi_concentre]' role='measure' type='quantitative' />
+      <column caption='Rpi Disperse' datatype='integer' name='[rpi_disperse]' role='measure' type='quantitative' />
+      <column caption='Type Rattachement Etablissement Mere' datatype='string' name='[type_rattachement_etablissement_mere]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;FR&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='fr-en-annuaire-education.csv' id='fr-en-annuaire-education.csv_3E271F7A48B9431C839BC3856C1FC8DB'>
+            <properties context=''>
+              <relation connection='textscan.0fxgme30v3subl18f6vrg1g0ch99' name='fr-en-annuaire-education.csv' table='[fr-en-annuaire-education#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=';'>
+                  <column datatype='string' name='Identifiant_de_l_etablissement' ordinal='0' />
+                  <column datatype='string' name='Nom_etablissement' ordinal='1' />
+                  <column datatype='string' name='Type_etablissement' ordinal='2' />
+                  <column datatype='string' name='Statut_public_prive' ordinal='3' />
+                  <column datatype='string' name='Adresse_1' ordinal='4' />
+                  <column datatype='string' name='Adresse_2' ordinal='5' />
+                  <column datatype='string' name='Adresse_3' ordinal='6' />
+                  <column datatype='integer' name='Code_postal' ordinal='7' />
+                  <column datatype='integer' name='Code_commune' ordinal='8' />
+                  <column datatype='string' name='Nom_commune' ordinal='9' />
+                  <column datatype='integer' name='Code_departement' ordinal='10' />
+                  <column datatype='integer' name='Code_academie' ordinal='11' />
+                  <column datatype='integer' name='Code_region' ordinal='12' />
+                  <column datatype='integer' name='Ecole_maternelle' ordinal='13' />
+                  <column datatype='integer' name='Ecole_elementaire' ordinal='14' />
+                  <column datatype='string' name='Voie_generale' ordinal='15' />
+                  <column datatype='string' name='Voie_technologique' ordinal='16' />
+                  <column datatype='string' name='Voie_professionnelle' ordinal='17' />
+                  <column datatype='integer' name='Telephone' ordinal='18' />
+                  <column datatype='string' name='Fax' ordinal='19' />
+                  <column datatype='string' name='Web' ordinal='20' />
+                  <column datatype='string' name='Mail' ordinal='21' />
+                  <column datatype='integer' name='Restauration' ordinal='22' />
+                  <column datatype='integer' name='Hebergement' ordinal='23' />
+                  <column datatype='integer' name='ULIS' ordinal='24' />
+                  <column datatype='string' name='Apprentissage' ordinal='25' />
+                  <column datatype='string' name='Segpa' ordinal='26' />
+                  <column datatype='string' name='Section_arts' ordinal='27' />
+                  <column datatype='string' name='Section_cinema' ordinal='28' />
+                  <column datatype='string' name='Section_theatre' ordinal='29' />
+                  <column datatype='string' name='Section_sport' ordinal='30' />
+                  <column datatype='string' name='Section_internationale' ordinal='31' />
+                  <column datatype='string' name='Section_europeenne' ordinal='32' />
+                  <column datatype='string' name='Lycee_Agricole' ordinal='33' />
+                  <column datatype='string' name='Lycee_militaire' ordinal='34' />
+                  <column datatype='string' name='Lycee_des_metiers' ordinal='35' />
+                  <column datatype='string' name='Post_BAC' ordinal='36' />
+                  <column datatype='string' name='Appartenance_Education_Prioritaire' ordinal='37' />
+                  <column datatype='string' name='GRETA' ordinal='38' />
+                  <column datatype='integer' name='SIREN_SIRET' ordinal='39' />
+                  <column datatype='integer' name='Nombre_d_eleves' ordinal='40' />
+                  <column datatype='string' name='Fiche_onisep' ordinal='41' />
+                  <column datatype='string' name='position' ordinal='42' />
+                  <column datatype='string' name='Type_contrat_prive' ordinal='43' />
+                  <column datatype='string' name='Libelle_departement' ordinal='44' />
+                  <column datatype='string' name='Libelle_academie' ordinal='45' />
+                  <column datatype='string' name='Libelle_region' ordinal='46' />
+                  <column datatype='real' name='coordX_origine' ordinal='47' />
+                  <column datatype='real' name='coordY_origine' ordinal='48' />
+                  <column datatype='string' name='epsg_origine' ordinal='49' />
+                  <column datatype='string' name='nom_circonscription' ordinal='50' />
+                  <column datatype='real' name='latitude' ordinal='51' />
+                  <column datatype='real' name='longitude' ordinal='52' />
+                  <column datatype='string' name='precision_localisation' ordinal='53' />
+                  <column datatype='date' name='date_ouverture' ordinal='54' />
+                  <column datatype='date' name='date_maj_ligne' ordinal='55' />
+                  <column datatype='string' name='etat' ordinal='56' />
+                  <column datatype='string' name='ministere_tutelle' ordinal='57' />
+                  <column datatype='integer' name='multi_uai' ordinal='58' />
+                  <column datatype='integer' name='rpi_concentre' ordinal='59' />
+                  <column datatype='integer' name='rpi_disperse' ordinal='60' />
+                  <column datatype='integer' name='code_nature' ordinal='61' />
+                  <column datatype='string' name='libelle_nature' ordinal='62' />
+                  <column datatype='integer' name='Code_type_contrat_prive' ordinal='63' />
+                  <column datatype='string' name='PIAL' ordinal='64' />
+                  <column datatype='string' name='etablissement_mere' ordinal='65' />
+                  <column datatype='string' name='type_rattachement_etablissement_mere' ordinal='66' />
+                  <column datatype='string' name='code_circonscription' ordinal='67' />
+                  <column datatype='string' name='code_zone_animation_pedagogique' ordinal='68' />
+                  <column datatype='string' name='libelle_zone_animation_pedagogique' ordinal='69' />
+                  <column datatype='string' name='code_bassin_formation' ordinal='70' />
+                  <column datatype='string' name='libelle_bassin_formation' ordinal='71' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Feuille 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6BF38C79-D99C-4989-9BC4-E5335EB1BC80}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='44'>
+    <window class='worksheet' maximized='true' name='Feuille 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5932CBB7-79A0-4C3C-86E6-7673ADDC0915}' />
+    </window>
+  </windows>
+</workbook>
